@@ -3,11 +3,6 @@ body {
     padding: 0;
     background-color: lightgray;
 }
-div{
-  display:flex;
-  flex-flow: row-wrap;
-
-}
  .row {
         /* display: table;
         width: 100%;
