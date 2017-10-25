@@ -54,6 +54,39 @@ app.get('/forhire', function (req, res) {
     })
   })
 })
+function getAllDocs (err, db) {
+  console.log(err)
+  const collection = db.collection('users')
+  let documents = []
+  collection.find({}).toArray(function (err, docs) {
+    users = docs
+    db.close()
+  })
+}
+function getAllUsers () {
+  return new Promise((resolve, reject) => {
+    MongoClient.connect(url, function (err, db) {
+      console.log(db)
+      const collection = db.collection('users')
+      collection.find({}).toArray(function (err, docs) {
+        console.log(docs)
+        resolve(docs)
+        reject(err)
+      })
+    })
+  })
+}
+
+function connectMongodb (url, cb) {
+  MongoClient.connect(url, cb)
+}
+
+function getUsers () {
+  connectMongodb(url, getAllDocs)
+  return users
+}
+
+module.exports = { getUsers, getAllUsers }
 
 
 //app.get('/', (request, response) => {
