@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+ <html>
+   <head>
+     <title></title>
+     <link rel="stylesheet" type="text/css" href="/styles.css">
+     <h1>Click to See:</h1>
+     <a href="/"><pre>All Robots</pre></a>
+     <a href="/forhire"><pre>Robots for Hire</pre></a>
+     <a href="/employed"><pre>Employed Robots</pre></a>
+
+
+   </head>
+   <body>
+
+     <div id="entry-wrapper">
+    {{#robots}}
+    <a href="/{{_id}}">
+      <div class="entry">
+        <img src="{{avatar}}" alt="">
+        <h1>{{name}}</h1>
+        {{#job}}
+        <p>{{job}}</p>
+        <p>{{company}}</p>
+        {{/job}}
+        {{^job}}
+        <p class="emphasis">Available for hire</p>
+        {{/job}}
+      </div></a>
+    {{/robots}}
+  </div>
+   </body>
+ </html>

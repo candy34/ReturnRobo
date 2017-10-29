@@ -23,6 +23,8 @@
   },
   "homepage": "https://github.com/candy34/ReturnRobo#readme",
   "dependencies": {
-    "mongodb": "^2.2.33"
+    "body-parser": "^1.18.2",
+    "mongodb": "^2.2.33",
+    "mongoose": "^4.12.4"
   }
 }
