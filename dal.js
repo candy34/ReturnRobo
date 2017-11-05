@@ -1,7 +1,7 @@
  const mongoose = require ('mongoose')
  mongoose.Promise = global.Promise
  const Robot = require('./model')
- mongoose.connect ('mongodb://localhost27017/ReturnRobodb', {
+ mongoose.connect ('mongodb://localhost27017/RobotsMongodb', {
    useMongoClient: true
  })
 

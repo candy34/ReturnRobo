@@ -6,7 +6,7 @@ const mongodb = require('mongodb');
 const dataFile = require("./data.js")
 const app = express()
 const MongoClient = mongodb.MongoClient;
-const mongoURL = 'mongodb://localhost:27017/RobotsMongoDB';
+const mongoURL = 'mongodb://localhost:27017/RobotsMongodb';
 const mongoose = require('mongoose')
 
 app.use(bodyParser.json())
