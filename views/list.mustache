@@ -25,8 +25,13 @@
         {{^job}}
         <p class="emphasis">Available for hire</p>
         {{/job}}
-      </div></a>
+      </div>
     {{/robots}}
+    <div class="singleUser">
+    {{#employedrobots}}
+      {{>_robot}}
+    {{/employedrobots}}
+  </div></a>
   </div>
    </body>
  </html>

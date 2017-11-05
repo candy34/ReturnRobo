@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+{{>_head}}
+  <body>
+    <header>
+      <ul class="nav nav-pills">
+        <li><a href="/">Home</a></li>
+        <li class="active"><a href="/register">Register</a></li>
+      </ul>
+    </header>
+    <main>
+      <form id="sign-up" action="/login" method="POST">
+        <input type="text" name="username" value="" placeholder="Username">
+        <input type="password" name="password" value="" placeholder="Password">
+        <button class="btn btn-secondary" type="submit" name="button">Login</button>
+      </form>
+    </main>
+  </body>
+</html>

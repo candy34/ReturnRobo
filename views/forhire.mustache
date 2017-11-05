@@ -1,0 +1,12 @@
+<article class="thumbnail">
+  <img class="pic" src="{{avatar}}" alt="{{name}}">
+  <h3>{{name}}</h3>
+{{#unemployed}}
+  {{#job}}
+  {{/job}}
+  {{^job}}
+  <p>{{job}}, {{company}}</p>
+  <p style="color: red">Robots for Hire</p>
+  {{/job}}
+{{/unemployed}}
+</article>
