@@ -3,15 +3,17 @@
    <head>
      <title></title>
      <link rel="stylesheet" type="text/css" href="/styles.css">
+   </head>
+   <body>
      <h1>Click to See:</h1>
+
      <a href="/"><pre>All Robots</pre></a>
      <a href="/forhire"><pre>Robots for Hire</pre></a>
      <a href="/employed"><pre>Employed Robots</pre></a>
-
-
-   </head>
-   <body>
-
+     <a href="/_forhire"><pre>Robots for Hire</pre></a>
+     <a href= "/_addrobots"><pre>Add Robots</pre></a>
+     <a href="/_login"><pre>Edit and Delete Robots</pre></a>
+     <a href="/_singlerobot"><pre>View a Robot</pre></a>
      <div id="entry-wrapper">
     {{#robots}}
     <a href="/{{_id}}">
@@ -27,9 +29,9 @@
         {{/job}}
       </div>
     {{/robots}}
-    <div class="singleUser">
+    <div class="singlerobot">
     {{#employedrobots}}
-      {{>_robot}}
+      {{>robot}}
     {{/employedrobots}}
   </div></a>
   </div>

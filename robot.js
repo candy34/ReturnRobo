@@ -6,7 +6,7 @@ const mongodb = require('mongodb');
 const dataFile = require("./data.js")
 const app = express()
 const MongoClient = mongodb.MongoClient;
-const mongoURL = 'mongodb://localhost:27017/RobotsMongodb';
+const mongoURL = 'mongodb://localhost:27017/RobotsMongoDB';
 const mongoose = require('mongoose')
 
 app.use(bodyParser.json())
@@ -74,7 +74,7 @@ app.post('/login', (req, res) => {
     }
   })
 })
-})
+
 app.get('/addrobots', (req, res) => {
    res.redirect('./robots')
  })
@@ -122,5 +122,5 @@ res.redirect('/robot/list')
 
 app.listen(3001, function() {
 console.log('Successfully started express application!');
-
+})
 //with Calvins help

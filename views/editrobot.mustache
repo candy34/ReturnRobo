@@ -4,7 +4,13 @@
     <link rel="stylesheet" href="/styles.css">
   </head>
   <body>
-    <h1>Edit your Profile</h1>
+
+    <h1>Click to See:</h1>
+    <a href="/"><pre>All Robots</pre></a>
+    <a href="/forhire"><pre>Robots for Hire</pre></a>
+    <a href="/employed"><pre>Employed Robots</pre></a>
+    <div id="entry-wrapper">
+      <h1>Edit and Delete your Profile</h1>
     {{#editRobot}}
       <form class = "editRobotForm" action="/robots/edit/{{_id}}" method="POST">
         <input type="text" name="name" value= "{{name}}" placeholder="Name">
