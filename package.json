@@ -1,0 +1,30 @@
+{
+  "name": "returnrobodb",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "Start Robo"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/candy34/ReturnRobo.git"
+  },
+  "keywords": [
+    "returnrobomb",
+    "people",
+    "robots",
+    "robot"
+  ],
+  "author": "mooremoore",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/candy34/ReturnRobo/issues"
+  },
+  "homepage": "https://github.com/candy34/ReturnRobo#readme",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "mongodb": "^2.2.33",
+    "mongoose": "^4.12.4"
+  }
+}
